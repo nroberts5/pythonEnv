@@ -1,6 +1,6 @@
 #! /bin/bash
 
-PYTHON_FOLDER=./
+PYTHON_FOLDER=localPython
 
 # Make Python Directory
 mkdir ${PYTHON_FOLDER}
@@ -29,9 +29,6 @@ else
     echo "Installing Python Libraries"
     ./${PYTHON_FOLDER}/myPython/bin/pip install ./pythonPackages/pydicom-0.9.9.tar.gz
 fi
-
-echo "Cleaning Up"
-rm -rf ./pythonPackages/
 
 
 echo "Python Environment Created at ./${PYTHON_FOLDER}/myPython"
